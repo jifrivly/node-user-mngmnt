@@ -1,0 +1,19 @@
+{
+  "name": "user-management",
+  "version": "0.1.0",
+  "description": "User management application",
+  "author": "Jifri",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start:prod": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
