@@ -4,16 +4,47 @@
   "description": "User management application",
   "author": "Jifri",
   "license": "ISC",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=16.15.0"
+  },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon src/index.js",
     "start:prod": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+    "eslint": "^8.17.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.7.1",
+    "sequelize-cli": "^6.4.1"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "express",
+    "rest",
+    "api",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "passport",
+    "eslint",
+    "prettier"
+  ]
 }
